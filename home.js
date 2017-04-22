@@ -1,4 +1,4 @@
-var cvd = require('cardVendorDetails');
+var cvd = require('./cardVendorDetails');
 
 var cv = tabris.ui.contentView;
 
