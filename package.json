@@ -1,5 +1,5 @@
 {
-  "main": "app.js",
+  "main": "home.js",
   "dependencies": {
     "tabris": "^2.0.0-beta2"
   }
