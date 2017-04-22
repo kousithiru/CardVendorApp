@@ -46,11 +46,11 @@ button2.centerY = 140;
  button2.on('select', goToNextPage);
 
 
-var button = new tabris.Button().appendTo(page);
-button.layoutData = {left:170, right:50, top:260, width:130};
-button.background = 'rgb (255,255,255)';
-button.font = '20px';
-button.textColor = 'rgb(255,255,255)';
+var useridinput = new tabris.TextInput().appendTo(page);
+useridinput.layoutData = {left:170, right:50, top:260, width:130};
+useridinput.background = 'rgb (255,255,255)';
+useridinput.font = '20px';
+useridinput.keyboard = 'number';
 
 
 var button1 = new tabris.Button().appendTo(page);
@@ -62,13 +62,11 @@ button1.textColor = 'rgb(255,255,255)';
 function goToNextPage(){
   var page2 = new tabris.Page({title:'Counting'}).appendTo(navigation);
 
-  var comp5 = new tabris.Composite({left:80, right:10, top:150, height:60}).appendTo(page2);
-  var textView5 = new tabris.TextView({alignment:'center'}).appendTo(comp5);
-  textView5.text = 'Mayura cards';
-  textView5.font = '30px';
-  textView5.centre =100;
+  var comp5 = new tabris.Composite({left:10, right:10, top:10, height:60}).appendTo(page2);
+  var sponsorlogo = new tabris.ImageView({centerX:0,centerY:0}).appendTo(comp5);
+  sponsorlogo.image = './images/mayura.jpg';
+  
   page2.background = 'rgb(153,0,76)';
-  textView5.textColor = 'rgb(255,255,255)';
 
 var comp6 = new tabris.Composite({left:50, right:10, top:280, height:140}).appendTo(page2);
   var textView6 = new tabris.TextView({alignment:'center'}).appendTo(comp6);
